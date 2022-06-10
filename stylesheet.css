@@ -1,0 +1,322 @@
+* { /* <--- THIS OVERRIDES DEFAULT BROWSER STYLE ***MUST*** */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #49797a;
+}
+body{
+    color: lightgray;
+    font-size: 10px;
+    width: 80em;
+    margin:auto;
+    /*background-image: linear-gradient(to right,  #49797a 50%,cadetblue 50%);*/
+
+}
+header{
+    position: relative;
+    padding: 0.5em;
+    width: 80%;
+    margin:auto;
+    background-color: peru;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius:1em ;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+}
+h1{
+    font-family: 'Bangers', Arial, sans-serif;
+    font-size: 5em;
+    letter-spacing: 0.1em;
+    text-shadow: #49797a 0.08em 0.15em;
+}
+header>p{
+    font-family: 'Limelight', sans-serif;
+    font-size: 1.3em;
+    padding:1.3em;
+    text-align: right;
+
+}
+aside{
+    position: absolute;
+    top:12em;
+    width: 20em;
+    height: 100%;
+    min-height: 40em;
+    float: left;
+    background-color: #49797a;
+    border-radius: 2.5em;
+    z-index: 1;
+}
+h2{
+    font-family: 'Limelight', sans-serif;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1.8em;
+}
+ul,.contact>p{
+    margin-left: 0;
+    padding-left: 2em;
+    padding-top: 1em;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    font-size: 1.3em;
+    list-style-type: square;
+}
+li{
+    padding-top: 1em;
+}
+.icons{
+    text-align: center;
+}
+img{
+    margin-right: 1em;
+    margin-top: 1em;
+    width: 3em;
+    height: 3em;
+}
+.mySlides>img{
+    width:600px;
+    height: 600px;
+    margin: auto;
+}
+em{
+    color: hotpink;
+    font-weight: bold;
+}
+main{
+    float: right;
+    width:60em;
+    background-color: cadetblue;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+    z-index: 3;
+    position: relative;
+}
+.calculator{
+    width:32em;
+    height: 47em;
+    margin: 10px auto;
+    padding-top: 1em;
+    border-radius: 2.5em;
+    box-shadow: 1.2em 1.2em #49797a;
+    background-color: #78b7b9;
+}
+.screen{
+    height: 8em;
+    background-color: lightblue;
+    border-radius: 2em;
+    box-shadow: inset 0.1em 0.3em 0.2em 0.2em #4a5a79;
+    margin: 1em;
+    font-family: 'Orbitron', monospace;
+    font-weight: bold;
+    color: blue;
+    text-align: right;
+}
+#first-line{
+    padding: 1em 1em 0 1em;
+    font-size: 1.5em;
+}
+#main-line{
+    padding: 0.5em 1em 0 1em;
+    font-size: 2em;
+}
+.button-pad{
+    margin:0 0 0 1em;
+}
+button{
+    width: 6em;
+    height: 4em;
+    padding: 0.5em;
+    box-shadow: 0.2em 0.2em #49797a;
+    border-radius: 1.5em;
+    margin:0.5em;
+    font-weight: bold;
+    font-family: monospace;
+}
+button:hover,
+button:visited:hover{
+    background-color: #c5c2c2;
+}
+button:active,
+button:visited:active{
+    background-color: #94948e;
+}
+.meta-btns{
+    float: left;
+}
+.meta-btns>button{
+    background-color: hotpink;
+    color: white;
+}
+.meta-btns>button:hover,
+.meta-btns>.metaover,
+.meta-btns>button:visited:hover{
+    background-color: #ea489f;
+}
+.meta-btns>button:active,
+.meta-btns>.metadown,
+.meta-btns>button:visited:active{
+    background-color: deeppink;
+}
+.op-btns{
+    float: right;
+    margin:2em 1em 0 0;
+}
+.op-btns>button{
+    display: block;
+    margin:0.9em;
+    background-color: khaki;
+}
+.op-btns>button:hover,
+.op-btns>.opover,
+.op-btns>button:visited:hover{
+    background-color: darkkhaki;
+}
+.op-btns>button:active,
+.op-btns>.opdown,
+.op-btns>button:visited:active{
+    background-color: #a9a34e;
+}
+.num-btns{
+    float: left;
+    width:22em;
+}
+.num-btns>button:hover,
+.numover,
+.num-btns>button:visited:hover{
+    background-color: cornsilk;
+}
+.num-btns>button:active,
+.numdown,
+.num-btns>button:visited:active{
+    background-color: blanchedalmond;
+}
+#0-btn{
+    height: 3.5em;
+}
+#equal-btn{
+    width:9.3em;
+    height:3.5em;
+}
+footer{
+    position: relative;
+    clear: both;
+    background-color: #49797a;
+    z-index: 2;
+}
+.console{
+    height: 14em;
+    width: 40em;
+    background-color: darkslateblue;
+    border-radius: 0.5em;
+    margin:  2em 2em;
+    float:right;
+    overflow-y: scroll;
+    font-family: 'Inconsolata', monospace;
+    padding: 1em;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+footer>p{
+    clear: both;
+    overflow: hidden;
+    padding: 2em;
+}
+* {box-sizing:border-box}
+/*----------------------------------------------------------------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    width:600px;
+    height:600px;
+    alignment: center;
+    text-align: center;
+    margin: auto;
+    margin-top: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
